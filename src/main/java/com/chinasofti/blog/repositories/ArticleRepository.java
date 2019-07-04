@@ -1,8 +1,13 @@
 package com.chinasofti.blog.repositories;
+
+
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import com.chinasofti.blog.models.Articles;
 
-public interface ArticleRepository extends CrudRepository<Articles, String>{
 
+@Repository
+public interface ArticleRepository extends CrudRepository<Articles, String>{
+	
 }
